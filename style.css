@@ -1,0 +1,605 @@
+  * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+  }
+
+  html::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: #111;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 5rem;
+  }
+
+  body {
+    background-color: rgba(0, 0, 0, 0.781);
+  }
+
+  .back-img {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(./assest/images/back-img.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 20s infinite ease-in-out;
+  }
+
+  @keyframes change {
+    0% {
+      background-image: url(./assest/images/back-img1.jpeg);
+    }
+
+    20% {
+      background-image: url(./assest/images/back-img2.jpeg);
+    }
+
+    40% {
+      background-image: url(./assest/images/back-img5.jpeg);
+    }
+
+    60% {
+      background-image: url(./assest/images/back-img3.jpeg);
+    }
+
+    80% {
+      background-image: url(./assest/images/back-img4.jpeg);
+    }
+
+    100% {
+      background-image: url(./assest/images/back-img.jpeg);
+    }
+
+  }
+
+  /* ----NAVBAR------ */
+
+  .nav-link {
+    transition: all 0.2s;
+  }
+
+  .nav-link:hover {
+    border-bottom: 2px solid red;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  /* ------ HOME BUTTON -------------- */
+  .homebtn {
+    border: 3px solid red;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    color: white;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 5px red, 0 0 25px red;
+  }
+
+  .homebtn:hover {
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+    box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 100px red, 0 0 200px red;
+    background-color: red;
+
+  }
+
+  /* .homebtn:before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    height: 180%;
+}
+ */
+  /* icons */
+  .icon {
+    filter: grayscale(100%);
+  }
+
+  .icon:hover {
+    filter: grayscale(0%);
+  }
+
+  /*------ ABOUT --------------  */
+
+  #About-Us {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px !important;
+  }
+
+  #abc:hover {
+    transition: all 3s !important;
+    border-radius: 30% !important;
+    cursor: pointer !important;
+    transform: scale(1.0) !important;
+    filter: grayscale(50%) !important;
+  }
+
+  #about-btn1 {
+    border: none;
+    box-shadow: 0 0 5px #0077B6, 0 0 25px #0077B6, 0 0 50px #0077B6, 0 0 100px #0077B6, 0 0 200px #0077B6;
+    background: rgb(39, 39, 248);
+  }
+
+  #about-btn1:hover {
+    cursor: pointer;
+    transition: all 3s !important;
+    background: linear-gradient(45deg, #a29094, #1A43BF, #605953, #4895EF, #302c29) !important;
+    font-size: 20px;
+    box-shadow: 0 0 5px #009DD1, 0 0 25px #009DD1, 0 0 50px #009DD1, 0 0 100px #009DD1, 0 0 200px #009DD1;
+
+  }
+
+  #about-btn2 {
+    border: none;
+    box-shadow: 0 0 5px red, 0 0 25px red, 0 0 50px red, 0 0 100px red, 0 0 200px red;
+    background: red;
+  }
+
+  #about-btn2:hover {
+    cursor: pointer;
+    transition: all 3s !important;
+    background: linear-gradient(45deg, #0038FC, #c92c41, #002092, #f94449) !important;
+    font-size: 20px;
+    box-shadow: 0 0 5px #0000FF, 0 0 25px #0000FF, 0 0 50px#0000FF, 0 0 100px #0000FF, 0 0 200px #0000FF;
+
+  }
+
+  #about-btn3 {
+    border: none;
+    box-shadow: 0 0 5px #AE8625, 0 0 25px #AE8625, 0 0 50px #AE8625, 0 0 100px #AE8625, 0 0 200px #AE8625;
+    background: #f8e805;
+  }
+
+  #about-btn3:hover {
+    cursor: pointer;
+    transition: all 3s !important;
+    background: linear-gradient(45deg, #362c0a, #b19122, #362c0a, #b19122, #6d5915) !important;
+    font-size: 20px;
+    box-shadow: 0 0 5px #ecbc68, 0 0 25px #ecbc68 0 0 50px #ecbc68, 0 0 100px #ecbc68, 0 0 200px #ecbc68;
+  }
+
+  /* -------------- SEVICES --------------------- */
+  #card-service {
+    /* animation: colors 3s infinite; */
+    transition: 1s;
+    border-radius: 20px;
+    background-image: linear-gradient(-225deg, #0baca4 0%, #F9FEA5 100%);
+  }
+
+  .card-text:hover {
+    color: white;
+    cursor: pointer;
+  }
+
+
+  #card-service:hover {
+    animation: colors 3s infinite;
+    box-shadow: rgba(203, 203, 216, 0.959) 0px 19px 38px, rgba(203, 203, 216, 0.959) 0px 15px 12px;
+    border: 0;
+    transform: translateX(2px) translateY(-5px);
+    cursor: pointer;
+  }
+
+  @keyframes colors {
+    0% {
+      background: #83a4d4;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #b6fbff, #6c9ee9);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #b6fbff, #83a4d4);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    100% {
+      background: #ED4264;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #FFEDBC, #ED4264);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #FFEDBC, #ED4264);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+  }
+
+  /* -------------- GALLERY -------------- */
+  #gall {
+    transition: 1s;
+  }
+
+  #gall:hover {
+    transform: scale(1.3);
+    z-index: 2;
+  }
+
+
+
+  /* ----------- CONTACT-------------- */
+
+  .main-contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./assest/images/form.jpg);
+    background-size: cover;
+  }
+
+  .main-contact .contact {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .main-contact .contact h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .main-contact .contact p {
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .main-contact .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .container .contactinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .contactinfo .box {
+    position: relative;
+    padding: 15px 0;
+    display: flex;
+    /* margin-left:-50px ; */
+  }
+
+  .contactinfo .box .icon {
+    min-width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .contactinfo .box .text {
+    display: flex;
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+    margin-top: -10px;
+  }
+
+  .contactinfo .box .text h3 {
+    font-size: 400;
+    color: #00bcd4;
+    margin-left: 10px;
+    padding-top: -40px;
+  }
+
+  .contactform {
+    width: 40%;
+    padding: 40px;
+    background-color: white;
+  }
+
+  .contactform h2 {
+    font-size: 30px;
+    color: #8d778d;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contactform .inputbox input,
+  .contactform .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+  }
+
+  .contactform .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: 0.5s;
+    color: #666;
+  }
+
+  .contactform .inputbox input:focus~span,
+  .contactform .inputbox input:valid~span,
+  .contactform .inputbox textarea:focus~span,
+  .contactform .inputbox textarea:focus~span {
+    color: rgb(23, 187, 241);
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+
+  .submit {
+    width: 100px;
+    background-color: rgb(23, 187, 241);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+
+  /* ---------------- FOOTER --------------------- */
+  #footer-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    background-color: white;
+    line-height: 40px;
+    color: black;
+  }
+
+  #footer-icon:hover {
+    transform: scale(1.3);
+    z-index: 2;
+    background-color: red !important;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 867px) {
+    .main-contact {
+      padding: 50px;
+    }
+
+    .main-contact .container {
+      flex-direction: column;
+    }
+
+    .contactinfo {
+      margin-bottom: 40px;
+    }
+
+    .contactinfo,
+    .contactform {
+      width: 100%;
+    }
+
+    /* Mobile Landscape (480px) */
+    @media (max-width: 480px) {
+      .main-contact {
+        padding: 20px;
+      }
+
+      .contactinfo {
+        flex-direction: column;
+      }
+
+      .box {
+        margin-bottom: 20px;
+      }
+
+      .contactform {
+        width: 100%;
+      }
+
+      .inputbox {
+        width: 100%;
+      }
+
+      .inputbox input[type="text"] {
+        width: 100%;
+      }
+
+      .inputbox textarea {
+        width: 100%;
+      }
+    }
+
+    /* Mobile Portrait (320px) */
+    @media (max-width: 320px) {
+      .sub-title {
+        font-size: 30px;
+      }
+
+      .contactinfo {
+        padding: 10px;
+      }
+
+      .box {
+        margin-bottom: 10px;
+      }
+
+      .contactform {
+        padding: 10px;
+      }
+
+      .inputbox {
+        margin-bottom: 10px;
+      }
+
+      .inputbox input[type="text"] {
+        padding: 5px;
+      }
+
+      .inputbox textarea {
+        padding: 5px;
+      }
+    }
+
+    /* Extra Small Devices (<= 270px) */
+    @media (max-width: 270px) {
+      .sub-title {
+        font-size: 25px;
+      }
+
+      .contactinfo {
+        padding: 5px;
+      }
+
+      .box {
+        margin-bottom: 5px;
+      }
+
+      .contactform {
+        padding: 5px;
+      }
+
+      .inputbox {
+        margin-bottom: 5px;
+      }
+
+      .inputbox input[type="text"] {
+        padding: 3px;
+      }
+
+      .inputbox textarea {
+        padding: 3px;
+      }
+    }
+
+
+
+    .container-xxl {
+      overflow-x: hidden;
+    }
+
+    .main-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contactinfo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .contactform {
+      margin-top: 20px;
+    }
+
+    .inputbox {
+      margin-bottom: 10px;
+    }
+
+    .inputbox input[type="text"],
+    .inputbox textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+    }
+  }
+
+  /* --------------KEN BURNS EFFECT-------------- */
+  /* .wrapper {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    position: relative;
+    display: table;
+}
+
+.img-area {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.single-img {
+    background-image: url(./assest/images/car1.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    animation: animate ease-in-out 40s 0s infinite;
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+
+
+}
+@keyframes animate{
+    15%{
+        transform: scale(2);
+        filter: blur(3px);
+    }
+    30%{
+        transform: scale(2);
+        filter: blur(0);
+        background-image: url(./assest/images/car2.jpg);
+    }
+    85%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(2);
+        background-image: url(./assest/images/car3.jpg);  
+    }
+} */
+  /* -------------VIDEO---------------- */
+  /* .back-video{
+    position:absolute;
+    right:0;
+    bottom:0;
+    z-index:-1;
+}
+@media(min-aspect-ratio:16/9){
+    back-video{
+        width:100%;
+        height:auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    back-video{
+        width:auto;
+        height:100%;
+    }
+} */
